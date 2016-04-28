@@ -1,0 +1,22 @@
+Shellcode
+----------------
+Pertinent Info: mostly x86, mostly for linux.
+
+Various shellcodes made by me for your learning pleasure and improvement where
+necessary.
+
+Shellcode included so far:
+
+Linux x86 (x86)
+----------------------------------------------------------------------------------------
+[+] Basic Exit:			Exit(0);
+[+] Iptable -F:			Setreuid(0,0); Execve('/sbin/iptables','-F',NULL); Exit(0);
+[+] Chmod 666 /etc/shadow:	Execve('/bin/chmod','666' '/etc/shadow',NULL); Exit(0);
+
+Mac OSX (x86_64)
+----------------------------------------------------------------------------------------
+[+] Hello World
+Tools included so far:
+
+[+] odfhex			Original source: Vividmachines.com
+[+] shellcodetest.c		Skeleton program/function for testing shellcode once done.
